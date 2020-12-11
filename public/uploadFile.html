@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Red Stone Shop</title> -->
+    <link rel="shortcut icon" type="image/icon" class="w-100 h-100" href="./img/Screenshot__198_-removebg-preview.png">
+    <title>MediaZone</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg w-100 py-0 navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand col-1 col-lg-0 order-lg-0 p-0 m-0" href="./index.html">
+                <img class=" " style="width: 80px;" src="./img/Screenshot__198_-removebg-preview.png" alt="">
+            </a>
+            <div class="order-lg-2 nav-icons">
+                <i class="fa fa-search btn px-lg-4 px-md-1 m-0" id="search-btn"></i>
+                <a href="./login.html" class="btn my-auto login text-light" style="background-color: #004e63;">
+                    <b style="font-size: 20px;">LogIn</b>
+                    <i class="fa  fa-user-circle"></i>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+         </button>
+            </div>
+            <div class="collapse navbar-collapse ml-lg-4 order-lg-1 pl-lg-0" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link py-2 px-3" href="./index.html">Home<span class="sr-only">(current)</span></a>
+                        <span class="span2"></span>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="image nav-link py-2 px-3" href="./images.html">
+                     Images
+                     </a>
+                        <span class="span2"></span>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link py-2 px-3" href="./movies.html">
+                     Movies
+                     </a>
+                        <span class="span2"></span>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link py-2 px-3" href="./ebooks.html">
+                     EBooks
+                     </a>
+                        <span class="span2"></span>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link py-2 px-3" href="#contact">
+                     Contact Us
+                     </a>
+                        <span class="span2"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- search bar start -->
+    <form action="" class="w-100 search " style="display: none;">
+        <div class="input-group">
+            <input type="text" class="form-control search_input rounded-0 pl-lg-4" name="search" placeholder="Find Out More....">
+            <button class="btn px-5 rounded-0 text-light border-left-0" style="background-color: #004e63;" type="submit">Search</button>
+        </div>
+    </form>
+    <!-- search bar end -->
+
+    <!-- file upload section start -->
+    <div class="container py-5 mb-5">
+        <div class="row container">
+            <div class="col-12 col-md-4 mt-5 img-place">
+                <div class="border ">
+                    <img src="./img/images.png" alt="" id="imagePlace" width="100%" height="100%">
+                    <p class="my-2">Your Sample Image will show here...</p>
+                </div>
+            </div>
+            <form action="" class="col-12 my-5 col-md-8" method="POST">
+                <div class="form-group">
+                    <label for="">Types</label>
+                    <select name="" id="mySelect" class="custom-select mr-sm-2" name='type'>
+                                   <option value="income" >
+                                    Image                
+                                   </option>
+                                   <option value="expense" >
+                                    Movie                
+                                   </option>
+                                    <option value="expense" >
+                                        Ebook                
+                                   </option>
+                             
+                        </select>
+                </div>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Author Name</label>
+                    <select id="mySelect" class="custom-select mr-sm-2" name='author name'>
+                                   <option value="income" >
+                                    Image                
+                                   </option>
+                                   <option value="expense" >
+                                    Movie                
+                                   </option>
+                                    <option value="expense" >
+                                        Ebook                
+                                   </option>
+                             
+                        </select>
+                </div>
+                <div class="form-group">
+                    <label for="category">Categories</label>
+                    <div class="row justify-content-between">
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                 Default checkbox
+                               </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                            <label class="form-check-label" for="defaultCheck2">
+                                 Disabled checkbox
+                               </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                            <label class="form-check-label" for="defaultCheck2">
+                              Disabled checkbox
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Default checkbox
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                            <label class="form-check-label" for="defaultCheck2">
+                              Disabled checkbox
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                            <label class="form-check-label" for="defaultCheck2">
+                           Disabled checkbox
+                         </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Default checkbox
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                            <label class="form-check-label" for="defaultCheck2">
+                              Disabled checkbox
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                            <label class="form-check-label" for="defaultCheck2">
+                           Disabled checkbox
+                         </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea type="text" rows="5" class="form-control" id="description" name="description"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" class="form-control" id="date" name="date">
+                </div>
+                <div class="form-group">
+                    <label for="image">Sample Image</label>
+                    <input type="file" class="form-control" id="image" name="image">
+                </div>
+                <div class="row justify-content-around">
+                    <input type="submit" class="btn btn-primary px-5" id="addnew" value="Upload"></input>
+                    <a href="./images.html" class="btn btn-secondary px-5">
+                         Back
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- file upload section end -->
+
+
+
+</body>
+<script src="./js/main.js"></script>
+<script>
+    const img = document.querySelector('#imagePlace');
+    const file = document.querySelector('#image');
+
+    if (file) {
+        file.addEventListener('change', function() {
+            const choosedFile = this.files['0'];
+            // console.log(choosedFile);
+            if (choosedFile) {
+                const reader = new FileReader();
+                reader.addEventListener('load', function() {
+                    img.setAttribute('src', reader.result);
+                });
+                reader.readAsDataURL(choosedFile);
+            }
+        })
+    }
+</script>
+
+</html>

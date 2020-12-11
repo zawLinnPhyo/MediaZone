@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/icon" href="./img/Screenshot__198_-removebg-preview.png">
+    <title>MediaZone</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="js/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg w-100 py-0 navbar-light  bg-light" id="nav">
+        <div class="container-fluid">
+            <a class="navbar-brand col-1 col-lg-0 order-lg-0 p-0 m-0" href="./index.html">
+                <img class=" " style="width: 80px;" src="./img/Screenshot__198_-removebg-preview.png" alt="">
+            </a>
+            <div class="order-lg-2 nav-icons">
+                <i class="fa fa-search btn text-dark px-lg-4 px-md-1 m-0" id="search-btn"></i>
+                <a href="" class="btn my-auto login text-light">
+                    <img src="./img/zlp.jpg" class="rounded-circle" width="50px" alt="">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            </div>
+            <div class="collapse navbar-collapse ml-lg-4 order-lg-1 pl-lg-0" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link py-2 px-3" href="./index.html">Home<span class="sr-only">(current)</span></a>
+                        <span class="span2"></span>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="image nav-link py-2 px-3" href="./images.html">
+                        Images
+                        </a>
+                        <span class="span2"></span>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link py-2 px-3" href="./movies.html">
+                        Movies
+                        </a>
+                        <span class="span2"></span>
+
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link py-2 px-3" href="./ebooks.html">
+                        EBooks
+                        </a>
+                        <span class="span2"></span>
+
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link py-2 px-3" href="./contact.html">
+                        Contact Us
+                        </a>
+                        <span class="span2"></span>
+
+                    </li>
+                    <li class="nav-item">
+                        <a href="./uploadFile.html" class="py-2 px-3 nav-link">
+                            <i class="fa fa-upload"></i>
+                            <span class="">Upload </span>
+                        </a>
+                        <span class="span2"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- search bar start -->
+    <form action="" class="w-100 search " style="display: none;">
+        <div class="input-group">
+            <input type="text" class="form-control search_input rounded-0 pl-lg-4" name="search" placeholder="Find Out More....">
+            <button class="btn px-5 rounded-0 text-light border-left-0" style="background-color: #004e63;" type="submit">Search</button>
+        </div>
+    </form>
+    <!-- search bar end -->
+
+
+
+    <!-- data section start -->
+    <div class="container-fluid my-4 ">
+        <div class="row .box">
+            <div class="col-4 col-md-2  rounded" style="background-color: #004e63;position:sticky; top:20px; overflow:hidden;">
+                <div class="input-group my-3">
+                    <div class="input-group-append w-100">
+                        <button type="button" class="btn btn-light w-100 rounded-top rounded-bottom">Sort By</button>
+                        <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div role="separator" class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </div>
+                    <span class="bar"></span>
+
+                </div>
+                <div class="box mt-5">
+                    <h5><a href="">
+                         Anime
+                    </a> <sup class="text-light">23</sup></h5>
+                    <h5><a href="">
+                         Anime
+                    </a> <sup class="text-light">23</sup></h5>
+                    <h5><a href="">
+                         Anime
+                    </a> <sup class="text-light">23</sup></h5>
+                    <h5><a href="">
+                         Anime
+                    </a> <sup class="text-light">23</sup></h5>
+                    <h5><a href="">         
+                         Anime
+                    </a> <sup class="text-light">23</sup></h5>
+                    <h5><a href="">
+                         Anime
+                    </a> <sup class="text-light">23</sup></h5>
+                    <h5><a href="">
+                         Anime
+                    </a> <sup class="text-light">23</sup></h5>
+                    <h5><a href="">
+                         Anime
+                    </a> <sup class="text-light">23</sup></h5>
+                    <h5><a href="">
+                         Anime
+                    </a> <sup class="text-light">23</sup></h5>
+                    <h5><a href="">
+                         Anime
+                    </a><sup class="text-light">23</sup> </h5>
+
+                </div>
+            </div>
+
+            <div class="col-8 col-md-10">
+                <h1 class="text-center rounded py-2 d-none d-md-block" style="border: 1px solid black;">
+                    Various Kind Of Books For You
+                </h1>
+                <h4 class="text-center rounded py-2 d-block d-md-none" style="border: 1px solid black;">
+                    Various Kind Of Books For You
+                </h4>
+                <h5 class="text-right py-2">
+                    <p>Sort Ebooks By:
+                        <a href="">
+                               Date
+                          </a>
+                    </p>
+                </h5>
+                <div class="container-fluid ebooks">
+                    <div class="cards">
+                        <div class="imgBox">
+                            <img src="./img/photo-1541359927273-d76820fc43f9.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <i class="like-part">
+                                <label class="like">
+                                    <input type="checkbox" name="" id="">
+                                    <i class="fa fa-heart"></i>
+                            </label>
+                            </i>
+                            <div class="details-head ">
+                                <h4 class="">
+                                    <i class="fa fa-book"></i> Book Name
+                                </h4>
+                                <h4>
+                                    <i class="fa fa-pencil"></i>
+                                    <a href="">
+                                    Author name
+                                    </a>
+                                </h4>
+                                <h4><i class="fa fa-tag"></i>
+                                    <a href="">
+                                        Category name
+                                        </a>
+                                </h4>
+                                <h4>
+                                    <i class="fa fa-file"></i> File size : 10mb
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="imgBox">
+                            <img src="./img/photo-1541359927273-d76820fc43f9.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <i class="like-part">
+                                <label class="like">
+                                    <input type="checkbox" name="" id="">
+                                    <i class="fa fa-heart"></i>
+                            </label>
+                            </i>
+                            <div class="details-head ">
+                                <h4 class="">
+                                    <i class="fa fa-book"></i> Book Name
+                                </h4>
+                                <h4>
+                                    <i class="fa fa-pencil"></i>
+                                    <a href="">
+                                    Author name
+                                    </a>
+                                </h4>
+                                <h4><i class="fa fa-tag"></i>
+                                    <a href="">
+                                        Category name
+                                        </a>
+                                </h4>
+                                <h4>
+                                    <i class="fa fa-file"></i> File size : 10mb
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="imgBox">
+                            <img src="./img/photo-1541359927273-d76820fc43f9.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <i class="like-part">
+                                <label class="like">
+                                    <input type="checkbox" name="" id="">
+                                    <i class="fa fa-heart"></i>
+                            </label>
+                            </i>
+                            <div class="details-head ">
+                                <h4 class="">
+                                    <i class="fa fa-book"></i> Book Name
+                                </h4>
+                                <h4>
+                                    <i class="fa fa-pencil"></i>
+                                    <a href="">
+                                    Author name
+                                    </a>
+                                </h4>
+                                <h4><i class="fa fa-tag"></i>
+                                    <a href="">
+                                        Category name
+                                        </a>
+                                </h4>
+                                <h4>
+                                    <i class="fa fa-file"></i> File size : 10mb
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="imgBox">
+                            <img src="./img/photo-1541359927273-d76820fc43f9.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <i class="like-part">
+                                <label class="like">
+                                    <input type="checkbox" name="" id="">
+                                    <i class="fa fa-heart"></i>
+                            </label>
+                            </i>
+                            <div class="details-head ">
+                                <h4 class="">
+                                    <i class="fa fa-book"></i> Book Name
+                                </h4>
+                                <h4>
+                                    <i class="fa fa-pencil"></i>
+                                    <a href="">
+                                    Author name
+                                    </a>
+                                </h4>
+                                <h4><i class="fa fa-tag"></i>
+                                    <a href="">
+                                        Category name
+                                        </a>
+                                </h4>
+                                <h4>
+                                    <i class="fa fa-file"></i> File size : 10mb
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="imgBox">
+                            <img src="./img/photo-1541359927273-d76820fc43f9.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <i class="like-part">
+                                <label class="like">
+                                    <input type="checkbox" name="" id="">
+                                    <i class="fa fa-heart"></i>
+                            </label>
+                            </i>
+                            <div class="details-head ">
+                                <h4 class="">
+                                    <i class="fa fa-book"></i> Book Name
+                                </h4>
+                                <h4>
+                                    <i class="fa fa-pencil"></i>
+                                    <a href="">
+                                    Author name
+                                    </a>
+                                </h4>
+                                <h4><i class="fa fa-tag"></i>
+                                    <a href="">
+                                        Category name
+                                        </a>
+                                </h4>
+                                <h4>
+                                    <i class="fa fa-file"></i> File size : 10mb
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="imgBox">
+                            <img src="./img/photo-1541359927273-d76820fc43f9.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <i class="like-part">
+                                <label class="like">
+                                    <input type="checkbox" name="" id="">
+                                    <i class="fa fa-heart"></i>
+                            </label>
+                            </i>
+                            <div class="details-head ">
+                                <h4 class="">
+                                    <i class="fa fa-book"></i> Book Name
+                                </h4>
+                                <h4>
+                                    <i class="fa fa-pencil"></i>
+                                    <a href="">
+                                    Author name
+                                    </a>
+                                </h4>
+                                <h4><i class="fa fa-tag"></i>
+                                    <a href="">
+                                        Category name
+                                        </a>
+                                </h4>
+                                <h4>
+                                    <i class="fa fa-file"></i> File size : 10mb
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="imgBox">
+                            <img src="./img/photo-1541359927273-d76820fc43f9.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <i class="like-part">
+                                <label class="like">
+                                    <input type="checkbox" name="" id="">
+                                    <i class="fa fa-heart"></i>
+                            </label>
+                            </i>
+                            <div class="details-head ">
+                                <h4 class="">
+                                    <i class="fa fa-book"></i> Book Name
+                                </h4>
+                                <h4>
+                                    <i class="fa fa-pencil"></i>
+                                    <a href="">
+                                    Author name
+                                    </a>
+                                </h4>
+                                <h4><i class="fa fa-tag"></i>
+                                    <a href="">
+                                        Category name
+                                        </a>
+                                </h4>
+                                <h4>
+                                    <i class="fa fa-file"></i> File size : 10mb
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="imgBox">
+                            <img src="./img/photo-1541359927273-d76820fc43f9.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <i class="like-part">
+                                <label class="like">
+                                    <input type="checkbox" name="" id="">
+                                    <i class="fa fa-heart"></i>
+                            </label>
+                            </i>
+                            <div class="details-head ">
+                                <h4 class="">
+                                    <i class="fa fa-book"></i> Book Name
+                                </h4>
+                                <h4>
+                                    <i class="fa fa-pencil"></i>
+                                    <a href="">
+                                    Author name
+                                    </a>
+                                </h4>
+                                <h4><i class="fa fa-tag"></i>
+                                    <a href="">
+                                        Category name
+                                        </a>
+                                </h4>
+                                <h4>
+                                    <i class="fa fa-file"></i> File size : 10mb
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="imgBox">
+                            <img src="./img/photo-1541359927273-d76820fc43f9.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <i class="like-part">
+                                <label class="like">
+                                    <input type="checkbox" name="" id="">
+                                    <i class="fa fa-heart"></i>
+                            </label>
+                            </i>
+                            <div class="details-head ">
+                                <h4 class="">
+                                    <i class="fa fa-book"></i> Book Name
+                                </h4>
+                                <h4>
+                                    <i class="fa fa-pencil"></i>
+                                    <a href="">
+                                    Author name
+                                    </a>
+                                </h4>
+                                <h4><i class="fa fa-tag"></i>
+                                    <a href="">
+                                        Category name
+                                        </a>
+                                </h4>
+                                <h4>
+                                    <i class="fa fa-file"></i> File size : 10mb
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="imgBox">
+                            <img src="./img/photo-1541359927273-d76820fc43f9.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <i class="like-part">
+                                <label class="like">
+                                    <input type="checkbox" name="" id="">
+                                    <i class="fa fa-heart"></i>
+                            </label>
+                            </i>
+                            <div class="details-head ">
+                                <h4 class="">
+                                    <i class="fa fa-book"></i> Book Name
+                                </h4>
+                                <h4>
+                                    <i class="fa fa-pencil"></i>
+                                    <a href="">
+                                    Author name
+                                    </a>
+                                </h4>
+                                <h4><i class="fa fa-tag"></i>
+                                    <a href="">
+                                        Category name
+                                        </a>
+                                </h4>
+                                <h4>
+                                    <i class="fa fa-file"></i> File size : 10mb
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- data section end -->
+    <!-- footer section start -->
+    <div class="container-fluid my-4 ">
+        <div class="row justify-content-around ">
+            <p class="d-inline ">
+                @2020MediaZone
+            </p>
+            <p class="d-inline ">
+                Developed by <a href="https://www.facebook.com/zaw.l.phyo.9406/ " target="_blank ">Zaw Lin Phyo</a>
+            </p>
+        </div>
+    </div>
+    <!-- footer section end -->
+    <!-- uparrow section start -->
+    <a href="#nav" class="btn text-light " id="arrow">
+        ^
+    </a>
+    <!-- uparrow section end-->
+    <script>
+        $(function() {
+            $('#search-btn').click(function() {
+                $('.search').toggle(100);
+            })
+        })
+    </script>
+</body>
+<script src="./js/main.js"></script>
+
+</html>
